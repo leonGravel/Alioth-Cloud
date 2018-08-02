@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: provider-user
+server:
+  port: 4001
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:2333/eureka/
+  instance:
+    prefer-ip-address: true
