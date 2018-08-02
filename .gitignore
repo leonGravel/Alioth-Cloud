@@ -3,3 +3,7 @@ provider-user/mvnw.cmd
 provider-user/mvnw
 provider-user/.mvn/wrapper/maven-wrapper.properties
 provider-user/.mvn/wrapper/maven-wrapper.jar
+consumer-movie/mvnw.cmd
+consumer-movie/mvnw
+consumer-movie/.mvn/wrapper/maven-wrapper.properties
+consumer-movie/.mvn/wrapper/maven-wrapper.jar
