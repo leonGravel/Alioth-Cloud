@@ -7,3 +7,7 @@ consumer-movie/mvnw.cmd
 consumer-movie/mvnw
 consumer-movie/.mvn/wrapper/maven-wrapper.properties
 consumer-movie/.mvn/wrapper/maven-wrapper.jar
+provider-bar/mvnw.cmd
+provider-bar/mvnw
+provider-bar/.mvn/wrapper/maven-wrapper.properties
+provider-bar/.mvn/wrapper/maven-wrapper.jar
