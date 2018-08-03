@@ -1,5 +1,6 @@
 package com.gravel.consumer.controller;
 
+import com.gravel.consumer.feignInterface.FeignClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;
@@ -14,15 +15,15 @@ import org.springframework.web.client.RestTemplate;
 @RestController
 public class IndexController {
     @Autowired
-    LoadBalancerClient loadBalancerClient;
-    @Autowired
     RestTemplate restTemplate;
 
+    @Autowired
+    private FeignClient feignClient;
     @GetMapping("/index")
     public String index() {
-        ServiceInstance serviceInstance = loadBalancerClient.choose("provider-user");
-        String url = "http://" + serviceInstance.getHost() + ":" + serviceInstance.getPort() + "/index";
-        System.out.println(url);
-        return restTemplate.getForObject(url, String.class);
+        return this.feignClient.getIndexStr();
+//        使用ribbon进行负载均衡
+//        return restTemplate.getForObject("http://provider/index", String.class);
+
     }
 }
