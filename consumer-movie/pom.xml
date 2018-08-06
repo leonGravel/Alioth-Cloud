@@ -40,8 +40,17 @@
 		<dependency>
 		<groupId>org.springframework.cloud</groupId>
 		<artifactId>spring-cloud-starter-openfeign</artifactId>
-	</dependency>
-	</dependencies>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.netflix.hystrix/hystrix-core -->
+
+
+    </dependencies>
 
 	<dependencyManagement>
 		<dependencies>
