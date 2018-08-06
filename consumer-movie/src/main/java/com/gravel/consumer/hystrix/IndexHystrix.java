@@ -1,6 +1,6 @@
 package com.gravel.consumer.hystrix;
 
-import com.gravel.consumer.feignInterface.FeignClient;
+import com.gravel.consumer.feignInterface.IndexFeignClient;
 import feign.hystrix.FallbackFactory;
 import org.springframework.stereotype.Component;
 
@@ -10,6 +10,9 @@ import org.springframework.stereotype.Component;
  */
 
 @Component
-public class IndexHystrix implements FallbackFactory<> {
-
+public class IndexHystrix implements FallbackFactory<IndexFeignClient> {
+    @Override
+    public IndexFeignClient create(Throwable cause) {
+        return () -> "fuck 熔断器";
+    }
 }

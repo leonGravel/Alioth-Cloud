@@ -1,11 +1,7 @@
 package com.gravel.consumer.controller;
 
-import com.gravel.consumer.feignInterface.FeignClient;
-import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
-import com.netflix.ribbon.proxy.annotation.Hystrix;
+import com.gravel.consumer.feignInterface.IndexFeignClient;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cloud.client.ServiceInstance;
-import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
@@ -20,12 +16,12 @@ public class IndexController {
     RestTemplate restTemplate;
 
     @Autowired
-    private FeignClient feignClient;
+    private IndexFeignClient indexFeignClient;
 
 
     @GetMapping("/index")
     public String index() {
-        return this.feignClient.getIndexStr();
+        return this.indexFeignClient.getIndexStr();
 //        使用ribbon进行负载均衡
 //        return restTemplate.getForObject("http://provider/index", String.class);
 
