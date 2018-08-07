@@ -13,3 +13,11 @@ eureka:
 feign:
   hystrix:
     enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+    health:
+      show-details: always
