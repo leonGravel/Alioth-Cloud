@@ -9,7 +9,6 @@ eureka:
       defaultZone: http://localhost:2333/eureka/
   instance:
     prefer-ip-address: true
-# To able Hystrix in Feign
 feign:
   hystrix:
     enabled: true
