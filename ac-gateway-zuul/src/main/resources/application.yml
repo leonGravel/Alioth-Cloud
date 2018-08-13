@@ -1,0 +1,9 @@
+server:
+  port: 3001
+spring:
+  application:
+    name: ac-gateway-zuul
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:2333/eureka/

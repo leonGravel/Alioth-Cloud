@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: consumer
+server:
+  port: 5001
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:2333/eureka/
+  instance:
+    prefer-ip-address: true
+feign:
+  hystrix:
+    enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+    health:
+      show-details: always
