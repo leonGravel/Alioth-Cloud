@@ -15,7 +15,5 @@ ac-provider-coffee-macchiato/mvnw.cmd
 ac-provider-coffee-macchiato/mvnw
 ac-provider-coffee-macchiato/.mvn/
 ac-provider-coffee-macchiato/src/test/
-ac-server/mvnw.cmd
-ac-server/mvnw
-ac-server/.mvn/
+
 ac-server/src/test/
