@@ -8,7 +8,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>consumer-movie</name>
+	<name>ac-consumer-tom</name>
 	<description>a consumer for alioth</description>
 
 	<parent>

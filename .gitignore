@@ -17,3 +17,13 @@ ac-provider-coffee-macchiato/.mvn/
 ac-provider-coffee-macchiato/src/test/
 
 ac-server/src/test/
+ac-consumer-tom/target/
+ac-gateway-zuul/target/
+ac-provider-coffee-latte/target/
+ac-provider-coffee-macchiato/target/
+ac-server/target/
+ac-server/ac-server.iml
+ac-provider-coffee-macchiato/ac-provider-coffee-macchiato.iml
+ac-provider-coffee-latte/ac-provider-coffee-latte.iml
+ac-gateway-zuul/ac-gateway-zuul.iml
+ac-consumer-tom/ac-consumer-tom.iml
