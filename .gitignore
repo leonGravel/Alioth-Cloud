@@ -27,3 +27,8 @@ ac-provider-coffee-macchiato/ac-provider-coffee-macchiato.iml
 ac-provider-coffee-latte/ac-provider-coffee-latte.iml
 ac-gateway-zuul/ac-gateway-zuul.iml
 ac-consumer-tom/ac-consumer-tom.iml
+ac-config/mvnw.cmd
+ac-config/mvnw
+ac-config/ac-config.iml
+ac-config/.mvn/
+ac-config/src/test/
