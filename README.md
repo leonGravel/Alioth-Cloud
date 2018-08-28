@@ -7,7 +7,7 @@
 │   ├── src/main
 │   ├── ├──java/com/gravel/config                // 具体代码。                    
 │   ├── ├──resources
-│   ├── ├── ├──config                            //配置文件
+│   ├── ├── ├──config                            // 配置文件
 ├── ac-gateway-zuul                              // 网关应用.                :3001端口 .
 │   ├── src/main
 │   ├── ├──java/com/gravel/gateway/zuul          // 具体代码。                    
@@ -24,9 +24,9 @@
 │   ├── src/main
 │   ├── ├──java/com/gravel/provider/
 │   ├── ├──resources
-├── sbc-server                                   // eureka-server注册中心     :2333端口
+├── ac-server                                    // eureka-server注册中心     :2333端口
 │   ├── src/main
-│   ├── ├──com/gravel/eureka/              // 具体代码。 
+│   ├── ├──com/gravel/eureka/                    // 具体代码。 
 │   ├── ├──resources
 ├── .gitignore                                   // git忽略项             
 ├── README.md               
