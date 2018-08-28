@@ -32,3 +32,8 @@ ac-config/mvnw
 ac-config/ac-config.iml
 ac-config/.mvn/
 ac-config/src/test/
+ac-config/target/
+ac-server/ac-server.iws
+ac-server/ac-server.ipr
+ac-gateway-zuul/ac-gateway-zuul.iws
+ac-gateway-zuul/ac-gateway-zuul.ipr

@@ -3,6 +3,11 @@
 >学习springcloud的记录
 ### 目录结构
 ```shell
+├── ac-config                                    // 配置中心.                :8088端口 .
+│   ├── src/main
+│   ├── ├──java/com/gravel/config                // 具体代码。                    
+│   ├── ├──resources
+│   ├── ├── ├──config                            //配置文件
 ├── ac-gateway-zuul                              // 网关应用.                :3001端口 .
 │   ├── src/main
 │   ├── ├──java/com/gravel/gateway/zuul          // 具体代码。                    
